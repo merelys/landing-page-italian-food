@@ -1,0 +1,41 @@
+/*Functional variables*/
+$black: #27292c;
+$white: rgb(255, 255, 255);
+$gray: rgb(118, 118, 118);
+
+$breakpoint-xs-min: 375px;
+$breakpoint-xxs-max: $breakpoint-xs-min - 1px;
+$breakpoint-sm-min: 576px;
+$breakpoint-xs-max: $breakpoint-sm-min - 1px;
+$breakpoint-md-min: 768px;
+$breakpoint-sm-max: $breakpoint-md-min - 1px;
+$breakpoint-lg-min: 992px;
+$breakpoint-md-max: $breakpoint-lg-min - 1px;
+$breakpoint-xl-min: 1200px;
+$breakpoint-lg-max: $breakpoint-xl-min - 1px;
+$breakpoint-xxl-min: 1430px;
+$breakpoint-xl-max: $breakpoint-xxl-min - 1px; //1429
+
+// /* Large desktops and laptops */
+// @media (max-width: 1200px) {
+// }
+
+// /* Landscape tablets and medium desktops */
+// @media (min-width: 992px) and (max-width: 1199px) {
+// }
+
+// /* Portrait tablets and small desktops */
+// @media (min-width: 768px) and (max-width: 991px) {
+// }
+
+// /* Landscape phones and portrait tablets */
+// @media (max-width: 767px) {
+// }
+
+// /* Portrait phones and smaller */
+// @media (max-width: 480px) {
+// }
+
+// /* Iphone 5 */
+// @media (max-width: 320px) {
+// }
