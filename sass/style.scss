@@ -8,6 +8,16 @@
     src: url(fonts/Reey-Regular.otf);
 }
 
+html {
+    scroll-behavior: smooth;
+
+    @media screen and (prefers-reduced-motion: reduce) {
+        html {
+            scroll-behavior: auto;
+        }
+    }
+}
+
 a {
     text-decoration: none;
     display: block;
@@ -746,6 +756,12 @@ h6 {
     &__form-item > input::-webkit-calendar-picker-indicator {
         color: $white;
         background-color: $white;
+    }
+
+    &__form-item > input[name="guest"]::-webkit-outer-spin-button,
+    &__form-item > input[name="guest"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
     }
 
     &__form-item input[type="submit"] {

@@ -4,6 +4,12 @@
 @font-face {
   font-family: ReeyRegular;
   src: url(fonts/Reey-Regular.otf); }
+html {
+  scroll-behavior: smooth; }
+  @media screen and (prefers-reduced-motion: reduce) {
+    html html {
+      scroll-behavior: auto; } }
+
 a {
   text-decoration: none;
   display: block; }
@@ -501,6 +507,9 @@ h6 {
   .booking__form-item > input::-webkit-calendar-picker-indicator {
     color: white;
     background-color: white; }
+  .booking__form-item > input[name="guest"]::-webkit-outer-spin-button, .booking__form-item > input[name="guest"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; }
   .booking__form-item input[type="submit"] {
     width: 10em;
     border: none; }

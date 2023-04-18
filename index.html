@@ -29,12 +29,12 @@
                             <a href="#" class="header__top-menu-link">Menu</a>
                         </li>
                         <li>
-                            <a href="#" class="header__top-menu-link"
-                                >Our story</a
+                            <a href="#bookTable" class="header__top-menu-link"
+                                >Book a table</a
                             >
                         </li>
                         <li>
-                            <a href="#" class="header__top-menu-link"
+                            <a href="#contactUs" class="header__top-menu-link"
                                 >Contact us</a
                             >
                         </li>
@@ -139,7 +139,7 @@
         <!-- dishes -->
 
         <!-- about us -->
-        <section class="aboutUs">
+        <section class="aboutUs" id="aboutUs">
             <div class="wrapper">
                 <h2>Lorem Ipsum Dolor</h2>
                 <div class="aboutUs__texts">
@@ -281,7 +281,7 @@
         <!-- advantage description -->
 
         <!-- booking -->
-        <section class="booking">
+        <section class="booking" id="bookTable">
             <div class="wrapper">
                 <div class="booking__extra-img">
                     <img src="images/img-booking-leaves.png" alt="Leaves" />
@@ -289,9 +289,25 @@
                 <h3>Book a Table</h3>
                 <form action="/action.php" class="booking__form">
                     <div class="booking__form-item">
-                        <input type="text" id="name" placeholder="Name" />
-                        <input type="tel" id="tel" placeholder="Telephone" />
-                        <input type="email" id="email" placeholder="Email" />
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Name"
+                            required
+                        />
+                        <input
+                            type="tel"
+                            id="tel"
+                            placeholder="Telephone"
+                            required
+                            data-phone-pattern
+                        />
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Email"
+                            required
+                        />
                     </div>
                     <div class="booking__form-item">
                         <input
@@ -326,7 +342,9 @@
                             type="number"
                             name="guest"
                             min="1"
+                            max="10"
                             step="1"
+                            required
                             placeholder="Number of guests"
                         />
                     </div>
@@ -334,6 +352,7 @@
                         <input
                             type="text"
                             name="info"
+                            maxlength="300"
                             placeholder="Additional informational"
                         />
                     </div>
@@ -350,7 +369,7 @@
         <!-- booking  -->
 
         <!-- footer -->
-        <footer class="footer">
+        <footer class="footer" id="contactUs">
             <div class="wrapper">
                 <div class="footer__content">
                     <div class="footer__content-left">
@@ -422,6 +441,7 @@
 
         <script src="js/jquery-3.6.4.min.js"></script>
         <script src="js/jquery-ui.min.js"></script>
+        <script src="js/script.js"></script>
         <script>
             $(function () {
                 $("#datepicker").datepicker({
